@@ -1,0 +1,115 @@
+// $primaryColor;
+// $secondaryColor;
+$font-size-mobile:16px;
+$font-size-desktop:20px;
+$containerpadding:20px;
+$containerWidth:100%;
+$taglineFontSize:50px;
+$tagContentFontSize:19px;
+$mainfont:'Titillium Web',
+sans-serif;
+
+footer{
+    height: 330px;
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.274);
+   display: grid;
+   justify-content: space-between;
+   align-items: center;
+   grid-template-columns: auto auto auto auto;
+   border-top: 2px solid #1d1d1d;
+}
+.footerImg img{
+    width: 190px;
+    height: 160px;
+   
+}
+.followUs,.quickLinks,.newsLetter,.newsLetter{
+    width: 100%;
+    padding: $containerpadding;
+    height: 180px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+}
+.footer-title{
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.followUs li, .quickLinks li,.newsLetter p{
+    list-style: none;
+    text-align: left;
+    font-family: $mainfont;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    position: relative;
+    transition: ease-in-out 0.2s;
+}
+.followUs li:hover,.quickLinks li:hover{
+   color: gray;
+}
+.followUs li:before,.quickLinks li:before{
+    content: '>';
+    position: absolute;
+    top: 0px;
+    left: -5%;
+    opacity: 0;
+}
+
+@media(min-width:320px){
+    footer{
+        grid-template-columns: auto;
+        height: auto;
+        padding: 10px;
+    }
+    .followUs,.quickLinks,.newsLetter{
+        width: 300px;
+        height: auto;
+    }
+    .footer-title{
+        font-size: 18px;
+    }
+    .followUs li,.quickLinks li,.newsLetter p{
+        font-size: 14px;
+    }
+    .footerImg img{
+        width: 149px;
+        height: 140px;
+       
+    }
+}
+@media(min-width:768px){
+    footer{
+        grid-template-columns: auto;
+        height: auto;
+        padding: 10px;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .followUs,.quickLinks,.newsLetter{
+        width: 300px;
+        height: auto;
+
+    }
+    .footerImg img{
+        width: 170px;
+        height: 150px;
+        margin-left: -25px;
+    }
+}
+@media(min-width:1200px){
+    footer{
+        grid-template-columns: auto auto auto auto;
+        height: auto;
+    }
+    .footer-title{
+        font-size: 20px;
+    }
+    .followUs li,.quickLinks li,.newsLetter p{
+        font-size: 16px;
+    }
+}

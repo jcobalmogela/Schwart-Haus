@@ -1,0 +1,161 @@
+// $primaryColor;
+// $secondaryColor;
+$font-size-mobile:16px;
+$font-size-desktop:20px;
+$containerpadding:20px;
+$containerWidth:100%;
+$taglineFontSize:50px;
+$tagContentFontSize:19px;
+$mainfont:'Titillium Web',
+sans-serif;
+
+.layout{
+    width: 100%;
+    height: auto;
+   position: relative;
+    padding: $containerpadding;
+    background-color: #e7e7e7;
+}
+.layout  h1{
+    font-size: 20px;
+    text-align: center;
+    font-family: $mainfont;
+    opacity: 0.8;
+    color: black;
+    letter-spacing: 1px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card p{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+    font-family: $mainfont;
+}
+.card:nth-child(1){
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.171)),
+    url(../img/ets/handshake.jpg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.card:nth-child(2){
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.171)),
+    url(../img/ets/steps-strategies-selling-house-fast.jpg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.card:nth-child(3){
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.171)),
+    url(../img/ets/TDS-on-rent-on-property-in-India.jpg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media(min-width:320px){
+    .container{
+        display: block;
+    }
+    .card{
+        width: 100%;
+        margin:0 ;
+        margin-top: 20px;
+        height: 200px;
+    }
+    .card h1{
+        color: white!important;
+    }
+    .layout  h1{
+        font-size: 18px;
+        text-align: center;
+        font-family: $mainfont;
+        opacity: 0.8;
+        color: black;
+        letter-spacing: 1px;
+    }
+}
+@media(min-width:483px){
+    .card:nth-child(1),.card:nth-child(2),.card:nth-child(3){
+        background-position: bottom left;
+    }
+}
+@media(min-width:768px){
+    .container{
+        display: flex;
+    }
+    .card{
+        height: 200px;
+        width: 300px;
+        background-color: white;
+        margin: 5px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:992px){
+    .container{
+        display: flex;
+    }
+    .card{
+        width: 100%;
+        margin:20px;
+        
+    }
+    .card
+    .layout  h1{
+        font-size: 20px;
+        text-align: center;
+        font-family: $mainfont;
+        opacity: 0.8;
+        color: black;
+
+        letter-spacing: 1px;
+    }
+
+} 
+
+@media(min-width:1200px){
+    .container{
+        display: flex;
+    }
+    .card{
+        width: 100%;
+        margin:20px;
+        height: 300px;
+    }
+    .card h1{
+       
+    }
+    .layout  h1{
+        font-size: 20px;
+        text-align: center;
+        font-family: $mainfont;
+        opacity: 0.8;
+        color: black;
+
+        letter-spacing: 1px;
+    }
+}

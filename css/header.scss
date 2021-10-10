@@ -1,0 +1,281 @@
+// $primaryColor;
+// $secondaryColor;
+$font-size-mobile:16px;
+$font-size-desktop:20px;
+$containerpadding:20px;
+$containerWidth:100%;
+$taglineFontSize:50px;
+$tagContentFontSize:19px;
+$mainfont:'Titillium Web',
+sans-serif;
+
+
+.header{
+    height: 90vh;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/modern-exteriors-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-x: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: $font-size-desktop;
+    font-family: $mainfont;
+    padding: $containerpadding;
+    
+}
+.header-content{
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.61);
+    height: 200px;
+    border-radius: 5px;
+    padding: $containerpadding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header-content h1{
+    color:#1d1d1d;
+    padding: 10px;
+}
+.tag-line{
+    font-size: $taglineFontSize;
+    color: white;
+    width: 400px;
+    font-family: $mainfont;
+    letter-spacing: 1px;
+}
+.tagContent{
+    font-size: $tagContentFontSize;
+}
+.header-con{
+    width: 100%;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+.input{
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-family: $mainfont;
+    padding: 10px;
+    font-size: $font-size-mobile;
+    opacity: 0.9;
+}
+.input:nth-child(3){
+    border-radius: 0px 7px 7px 0px ;
+    margin-top: 10px;
+}
+.select{
+    width: 80px;
+    border-radius: 7px 0px 0px 7px;
+}
+.select option{
+    padding: 10px;
+}
+
+.fillup{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: $containerpadding;
+}
+.searchBtn{
+    width: 120px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.propertyType{
+    border-radius: unset;
+    width: 100px;
+}
+
+@media(max-width:319px){
+    .header-content{
+        padding: 0;
+        height: 250px;
+        width: 100%;
+    }
+    .input{
+        height: 40px;
+        font-size: 13px;
+    }
+    .input:nth-child(3){
+        width: 244px;
+        border-radius: 7px;
+    }
+    .propertyType{
+        border-radius: 0px 7px 7px 0px;
+    }
+    .header-con{
+        width: 100%;
+        height: auto;
+        display: block; 
+    }
+    .header{
+        display: block;
+        padding: 0;
+    }
+    .tag-line{
+        font-size: $taglineFontSize;
+        color: white;
+        width: 100%;
+        font-family: $mainfont;
+        letter-spacing: 1px;
+    }
+    .tag-line{
+        font-size: 30px;
+    }
+    .tagContent{
+        font-size: 14px;
+    }
+   
+   
+}
+
+@media(min-width:393px){
+    .header-content{
+        padding: 0px;
+        height: 210px;
+    }
+    .input:nth-child(3){
+        width: 160px;
+    }
+    .header{
+        padding: 10px;
+        height: auto;
+    }
+    .tag-line{
+        font-size: 32px;
+    }
+    .tagContent{
+        font-size: 16px;
+    }
+    .header-con{
+        padding: 0;
+    }
+    
+    
+}
+
+@media(min-width:320px){
+    .header-content{
+        padding: 0;
+        height: 250px;
+        width: 100%;
+    }
+    .input{
+        height: 40px;
+        font-size: 13px;
+    }
+    .input:nth-child(3){
+        width: 244px;
+        border-radius: 7px;
+    }
+    .propertyType{
+        border-radius: 0px 7px 7px 0px;
+    }
+    .header-con{
+        width: 100%;
+        height: auto;
+        display: block; 
+        padding-top: 10px;
+    }
+    .header{
+        display: block;
+        padding: 0;
+    }
+    .tag-line{
+        font-size: $taglineFontSize;
+        color: white;
+        width: 100%;
+        font-family: $mainfont;
+        letter-spacing: 1px;
+    }
+    .tag-line{
+        font-size: 30px;
+    }
+    .tagContent{
+        font-size: 14px;
+    }
+   
+}
+
+@media(min-width:393px){
+    .header-content{
+        padding: 0px;
+        height: 210px;
+    }
+    .input:nth-child(3){
+        width: 160px;
+    }
+    .header{
+        padding: 10px;
+    }
+    .tag-line{
+        font-size: 32px;
+    }
+    .tagContent{
+        font-size: 16px;
+    }
+    
+}
+
+@media(min-width:483px){
+    .input:nth-child(3){
+        width: 240px;
+    }
+    .tag-line{
+        width: 100%;
+    }
+}
+@media(min-width:738px){
+    .header{
+        height: auto;
+    }
+}
+@media(min-width:1200px){
+     .header-content{
+        height: 200px;
+        width: auto;
+        padding: 20px;
+        padding-top: 0;
+     }
+     .input:nth-child(3){
+        width: 290px;
+       
+    }
+    .header-con{
+        display:flex; 
+    }
+    .header{
+        display: flex;
+        height: 90vh;
+    }
+    .input{
+        height: 50px;
+        font-size: 16px;
+    }
+    .tag-line{
+        font-size: $taglineFontSize;
+        color: white;
+        width: 600px;
+        font-family: $mainfont;
+        letter-spacing: 1px;
+    }
+    .tagContent{
+        font-size: 19px;
+    }
+    
+}

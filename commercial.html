@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/commercial/searchProperty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400&display=swap" rel="stylesheet">
+    <title>Schwart Haus Commercial</title>
+</head>
+<body>
+    <!-- subtitute for reusable component temporary -->
+    <nav id="navbar">
+        <a href="index.html"><img src="./img/logo.png" alt=""></a>
+        <ul class="navLink not-active">
+            <li class="links">Buy</li>
+            <li class="links">Rent</li>
+            <li class="links">Sell</li>
+            <li class="links">New Homes</li>
+            <a href="./commercial.html"><li class="links">Commercial</li></a>
+            <li class="links">New Developement</li>
+            <li class="links">Resources</li>
+            <section class="user">
+                <button class="btn-user">LOG IN</button>
+                <button class="btn-user">SIGN UP</button>
+            </section>
+        </ul>
+        <section class="menu menuHide">
+            <section class="burger"></section>
+            <section class="burger"></section>
+            <section class="burger"></section>
+        </section>
+    </nav>
+   <!-- subtitute for reusable component temporary -->
+   <section class="searchPropertyCon">
+        <section class="searchbox">
+            <form class="searchForm" action="">
+                <input id="search" class="input" type="text" placeholder="Search by location, project">
+                <select name="s1" id="s1">
+                    <option value="">Buy</option>
+                    <option value="rent">Rent</option>
+                    <option value="new">New</option>
+                </select>
+                <select name="s2" id="s2">
+                    <option value="">Condo</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="house">House</option>
+                </select>
+                <select name="s3" id="s3">
+                    <option value="">Any price</option>
+                    <option value="asc">Min</option>
+                    <option value="desc">Max</option>
+                </select>
+                <select name="s4" id="s4">
+                    <option value="">0 bed</option>
+                    <option value="1">1 bed</option>
+                    <option value="5">5 bed</option>
+                </select>
+                <button class="searchBtn" type="submit">Search</button>
+            </form>
+       
+        </section>
+        <section class="searchbox-content">
+            <h1>Commercial properties for Sale in the Philippines</h1>
+            <section class="search-result">
+                <section class="search-list"></section>
+                <div class="pagination">
+                    <a  href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&raquo;</a>
+                  </div>
+            </section>
+        </section>
+   </section>
+
+
+    <script src="./script.js"></script>
+    <script src="./commercial.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+.searchPropertyCon {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.searchbox {
+  width: 350px;
+  height: 90vh;
+  background-color: rgba(128, 128, 128, 0.39);
+  position: relative;
+  padding: 20px;
+}
+
+.searchbox-content {
+  width: 100%;
+  height: 90vh;
+  right: 0;
+  position: absolute;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.searchbox-content h1 {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.searchForm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 10px;
+}
+
+.input {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+select {
+  border: none;
+  padding: 10px;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #1d1d1dbd;
+  border-radius: 5px;
+}
+
+.searchBtn {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  color: #1d1d1dbd;
+}
+
+.searchBtn:hover {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+input[type=text] {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 20px;
+  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.search-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 20px;
+  padding: 20px;
+  height: 80vh;
+}
+
+.search-result {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-list {
+  height: 250px;
+  background-color: white;
+  color: white;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 2px 0px;
+          box-shadow: 0px 2px 2px 0px;
+}
+
+.project-list h3 {
+  color: black;
+  position: relative;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.project-list img {
+  width: 100%;
+  position: relative;
+  top: 0;
+  height: 150px;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  font-family: "Titillium Web", sans-serif;
+}
+
+@media (min-width: 320px) {
+  .searchPropertyCon {
+    height: auto;
+  }
+  .search-list {
+    height: auto;
+  }
+  .searchbox {
+    position: relative;
+    height: auto;
+    width: auto;
+  }
+  .search-list {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .project-list {
+    width: 290px;
+    height: 300px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+  .searchbox-content {
+    height: auto;
+  }
+  .searchbox-content h1 {
+    margin-top: 10px;
+  }
+  .active {
+    color: dodgerblue !important;
+  }
+  .project-list img {
+    height: 170px;
+  }
+}
+
+@media (min-width: 393px) {
+  .project-list img {
+    height: 160px;
+  }
+}
+
+@media (min-width: 483px) {
+  .project-list {
+    width: 450px;
+    height: 390px;
+  }
+  .project-list img {
+    height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-list {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    height: auto;
+  }
+  .project-list {
+    width: 360px;
+    height: 360px;
+  }
+  .project-list img {
+    height: 220px;
+  }
+}
+
+@media (min-width: 992px) {
+  .searchbox {
+    position: relative;
+    height: auto;
+    width: auto;
+    background-color: rgba(128, 128, 128, 0.39);
+    position: relative;
+    padding: 20px;
+  }
+  .searchPropertyCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .searchbox-content {
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: relative;
+  }
+  .search-list {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    height: auto;
+  }
+  .project-list {
+    width: 200px;
+    height: 260px;
+    background-color: white;
+  }
+  .project-list img {
+    height: 120px;
+  }
+  .project-list h3 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .searchbox {
+    position: relative;
+    height: auto;
+    width: auto;
+  }
+  .searchPropertyCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .searchbox {
+    width: 350px;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.39);
+    position: relative;
+    padding: 20px;
+  }
+  .searchbox-content {
+    width: 100%;
+    height: auto;
+    top: 0;
+    position: relative;
+  }
+  .search-list {
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    height: auto;
+  }
+  .project-list {
+    width: 275px;
+    height: 290px;
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+  .project-list img {
+    height: 160px;
+  }
+}
+/*# sourceMappingURL=searchProperty.css.map */

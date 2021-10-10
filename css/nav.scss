@@ -1,0 +1,443 @@
+// $primaryColor;
+// $secondaryColor;
+$font-size-mobile:16px;
+$font-size-desktop:20px;
+$containerpadding:20px;
+$containerWidth:100%;
+$mainfont:'Titillium Web',
+sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // border:1px solid red;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: white;
+    align-items: center;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 10vh;
+    box-shadow: 0px 2px 2px 0px rgba($color: #000000, $alpha: 0.5);
+}
+ul a{
+    text-decoration: none!important;
+    color: black;
+}
+
+
+nav img {
+    width: 120px;
+    height: 100px;
+}
+
+.navLink {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.navLink li {
+    list-style: none;
+    font-family: $mainfont;
+    font-size: $font-size-desktop;
+    margin: 10px;
+    font-weight: 400;
+    cursor: pointer!important;
+}
+ul a{
+    text-decoration: none!important;
+}
+
+.user {
+    position: absolute;
+    right: 2%;
+
+
+}
+
+.btn-user {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-family: $mainfont;
+    margin: 5px;
+    font-size: $mainfont;
+
+}
+
+.menu {
+    width: 45px;
+    height: 40px;
+    border: 2px solid #1d1d1d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    opacity: 0.9;
+    border-radius: 5px;
+    flex-direction: column;
+
+}
+
+.burger {
+    width: 25px;
+    border: 1px solid #1d1d1d;
+    border-radius: 30px;
+    height: 1px;
+    background: #1d1d1d;
+    transition: all ease-in-out 0.5s;
+}
+@media(max-width:319px) {
+    .hide {
+        display: none;
+    }
+    .menu{
+        width: 30px;
+        height: 30px;
+    }
+    .burger{
+        width: 15px;
+    }
+
+    nav {
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 999;
+
+    }
+    nav img{
+        width: 60px;
+        height: 80px;
+    }
+
+    .navLink {
+        display: block;
+        position: absolute;
+        top: 100%;
+        text-align: left;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.774);
+        color: white;
+        padding: 20px;
+        z-index: -1;
+
+    }
+    .navLink li {
+        font-size: $font-size-mobile;
+    }
+
+    .user {
+        position: relative;
+        right: 0;
+    }
+    .btn-user{
+        font-size: $font-size-mobile;
+    }
+
+    .fadeIn {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .fadeOut {
+        animation: fadeOut 0.5s ease-in-out;
+    }
+
+    .fadedMid {
+        opacity: 0;
+    }
+
+    .fadedTop {
+        transform: rotate(-140deg);
+        position: absolute;
+        transition: ease-in-out 0.5s;
+    }
+
+    .fadedBot {
+        transform: rotate(140deg);
+        position: absolute;
+        transition: ease-in-out 0.5s;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    .nav-active {
+        width: 100%;
+        padding: 20px;
+        transition: ease-in-out 0.2s;
+    }
+
+    .not-active {
+        width: 0%;
+        padding: 0;
+
+    }
+}
+
+@media(min-width:320px) {
+    ul a{
+        color: white;
+    }
+    .hide {
+        display: none;
+    }
+    .menu{
+        width: 30px;
+        height: 30px;
+    }
+    .burger{
+        width: 15px;
+    }
+
+    nav {
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 999;
+
+    }
+    nav img{
+        width: 60px;
+        height: 80px;
+    }
+
+    .navLink {
+        display: block;
+        position: absolute;
+        top: 100%;
+        text-align: left;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.774);
+        color: white;
+        padding: 20px;
+        z-index: -1;
+
+    }
+    .navLink li {
+        font-size: $font-size-mobile;
+    }
+
+    .user {
+        position: relative;
+        right: 0;
+    }
+    .btn-user{
+        font-size: $font-size-mobile;
+    }
+
+    .fadeIn {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .fadeOut {
+        animation: fadeOut 0.5s ease-in-out;
+    }
+
+    .fadedMid {
+        opacity: 0;
+    }
+
+    .fadedTop {
+        transform: rotate(-140deg);
+        position: absolute;
+        transition: ease-in-out 0.5s;
+    }
+
+    .fadedBot {
+        transform: rotate(140deg);
+        position: absolute;
+        transition: ease-in-out 0.5s;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
+    .nav-active {
+        width: 100%;
+        padding: 20px;
+        transition: ease-in-out 0.2s;
+    }
+
+    .not-active {
+        width: 0%;
+        padding: 0;
+
+    }
+}
+
+@media(min-width:393px) {
+    nav img{
+        width: 80px;
+        height: 80px;
+    }
+    .navLink {
+        
+    }
+    .menu{
+        width: 35px;
+        height: 35px;
+    }
+    .burger{
+        width: 20px;
+    }
+}
+
+@media(min-width:992px) {
+    .hide {
+        display: flex;
+    }
+
+    .menuHide {
+        display: none;
+    }
+
+    .navLink {
+        display: flex;
+        top: 0;
+        position: relative;
+        background: none;
+        color: black;
+    }
+    .navLink li{
+        font-size: $font-size-mobile;
+    }
+
+    .not-active {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-active {
+        width: 100%;
+        padding: 0;
+    }
+
+    .user {
+        right: 0%;
+        position: absolute;
+
+    }
+
+    // .btn-user:nth-child(2) {
+    //     display: none;
+    // }
+    nav img{
+        width: 100px;
+        height: 120px;
+    }
+    nav{
+        height: 10vh;
+    }
+    ul a{
+        color: black;
+    }
+ 
+
+
+}
+
+@media(min-width:1200px) {
+    .hide {
+        display: flex;
+    }
+    nav{
+        height: 10vh;
+    }
+    nav img{
+        width: 100px;
+        height: 120px;
+    }
+  
+
+    .menuHide {
+        display: none;
+    }
+
+    .navLink {
+        display: flex;
+        top: 0;
+        position: relative;
+        background: none;
+        color: black;
+        transition: none;
+        margin-left: 20px;
+    }
+    .navLink li{
+        font-size: $font-size-desktop;
+        margin-left: 10px;
+    }
+
+    .not-active {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-active {
+        width: 100%;
+        padding: 0;
+    }
+
+    .user {
+        right: 0%;
+        position: absolute;
+
+    }
+
+    .btn-user:nth-child(2) {
+        display: inline-block;
+    }
+    ul a{
+        color: black;
+    }
+  
+
+
+}
